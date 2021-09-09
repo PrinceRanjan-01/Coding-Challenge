@@ -1,0 +1,182 @@
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+    --red:#e20404;
+}
+*{
+    font-family: 'Nunito' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+/* ---Header 1--- */
+
+.header-1{
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 5%;
+}
+.logo{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+.logo i{
+    padding-right: 0.5rem;
+    color: var(--green);
+}
+.header-1 .search-box-container{
+    display: flex;
+    height: 3rem;
+}
+.header-1 .search-box-container #search-box{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #333;
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    text-transform: none;
+}
+.header-1 .search-box-container label{
+    height: 100%;
+    text-align: center;
+    width: 8rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    background: var(--green);
+    cursor: pointer;
+}
+.header-1 .search-box-container label:hover{
+    background: var(--black);
+}
+/* ---Header 2--- */
+
+.header-2{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 5%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    position: relative;
+}
+.header-2 .navbar a{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--black);
+}
+.header-2 .navbar a:hover{
+    background: var(--green);
+    color: #fff;
+}
+.header-2 .navbar .active{
+    background: var(--green);
+    color: #fff;
+}
+.header-2 .icons a{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-left: 1rem;
+}
+.header-2 .icons a:hover{
+    color: var(--red);
+    font-size: 1.7rem;
+
+}
+/* ---Icon--- */
+.fa-hand-point-up{
+    color: var(--green);
+    font-size: larger;
+}
+/* ---Footer Section --- */
+
+.footer .credit{
+    padding: 2rem 1rem;
+    border-top: 0.1rem solid rgba(0,0,0,0.2);
+    border-bottom: 0.1rem solid rgba(0,0,0,0.2);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    background: #eee;
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+/* --- Contact Section --- */
+
+.contact form{
+    text-align: center;
+    padding: 0.4rem;
+    border: 0.1rem solid rgba(0,0,0,0.3);    
+}
+#row{
+    margin: auto;
+}
+.contact form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .inputbox input, .contact form textarea{
+    padding: 0.2rem;
+    font-size: 1rem;
+    background: #f7f7f7;
+    text-transform: none;
+    margin: 0.5rem 0;
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    width: 49%;
+}
+.contact form textarea{
+    height: 10rem;
+    resize: none;
+    width: 100%;
+}
+.btn{
+    background: var(--green);
+    color: #fff;
+    padding: 0.3rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+/*  ---Media Query --- */
+
+@media (max-width: 930px){
+.logo{
+    font-size: 0.8rem;
+}
+.header-1 .search-box-container #search-box{
+    height: 100%;
+    width: 60%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+.header-2 .navbar a{
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    border-radius: 0.3rem;
+}
+.header-2 .icons a{
+    font-size: 0.7rem;
+    padding-left: 0.7rem;
+}
+.header-2 .icons a:hover{
+    font-size: 0.7rem;
+}
+.footer .credit{
+    font-size: 1.2rem;
+}
+}
+
